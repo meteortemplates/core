@@ -20,9 +20,9 @@ some of the `templates` packages.
 Usage
 -----
 
-Initialize a new package under a unique namespace. Here we'll build a basic **like button**.
+> The following example is being run on the client-side only.
 
-Assume all the following code is being run on the **client-side only**.
+Initialize a new package under a unique namespace. Here we'll build a basic **like button**.
 
 ```javascript
 Likes = new TemplatesPackage('likes');
