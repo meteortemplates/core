@@ -77,7 +77,7 @@ with our custom namespace.
 Template.likeButton.helpers({
   likeCount: function () {
     var instance = Template.instance();
-    var self = Package.translate('key').into(instance); // Returns `templates:likes:key`.
+    var self = Likes.translate('key').into(instance); // Returns `templates:likes:key`.
     return Template.parentData(1)[self.key];
   }
 });
@@ -91,7 +91,7 @@ Template.likeButton.events({
     // We use `lookup` for prototype methods because it skips using an internal registry that
     // would otherwise run `_.bind` on functions. It returns the namespaced method name.
 
-    var method = Package.lookup('increaseLikes'); // Returns `templates:likes:increaseLikes`.
+    var method = Likes.lookup('increaseLikes'); // Returns `templates:likes:increaseLikes`.
     instance[method]();
   }
 })
