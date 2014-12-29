@@ -77,7 +77,7 @@ with our custom namespace.
 Template.likeButton.helpers({
   likeCount: function () {
     var instance = Template.instance();
-    var self = Likes.translate('key').into(instance); // Returns `templates:likes:key`.
+    var self = Likes.translate('key').into(instance); // Returns `{key: 'likes'}`.
     return Template.parentData(1)[self.key];
   }
 });
