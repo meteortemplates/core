@@ -37,7 +37,7 @@ Likes.methods({
     var self = Likes.translate('collection', 'docId', 'incop').into(this);
     self.collection.update({_id: self.docId}, self.incop);
   }
-})
+});
 ```
 
 Add safely namespaced properties onto every `Template` instance.
@@ -94,7 +94,7 @@ Template.likeButton.events({
     var method = Likes.lookup('increaseLikes'); // Returns `templates:likes:increaseLikes`.
     instance[method]();
   }
-})
+});
 ```
 
 Finally, test the functionality out in the wild.
