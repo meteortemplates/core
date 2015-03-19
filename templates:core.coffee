@@ -1,7 +1,7 @@
 
 # Core for `templates` packages.
-@TemplatesPackage = (name) ->
-  this.namespace = "templates:#{name}"
+@TemplatesPackage = (name, org) ->
+  this.namespace = "#{org || 'templates'}:#{name}"
 
 # Add custom namespaced methods to Blaze.TemplateInstance.prototype.
 @TemplatesPackage.prototype.methods = (methods) ->

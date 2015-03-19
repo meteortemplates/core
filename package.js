@@ -1,7 +1,7 @@
 Package.describe({
   name: 'templates:core',
   summary: 'Templates namespacing utils and core abstractions.',
-  version: '1.0.0',
+  version: '1.1.0',
   git: 'https://github.com/meteortemplates/core.git'
 });
 
